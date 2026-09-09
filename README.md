@@ -26,10 +26,10 @@ Developer tooling, static analysis, build systems, and CI correctness.
   <img src="https://skillicons.dev/icons?i=git,github,githubactions,nodejs,npm,maven,gradle,powershell,bash&theme=dark" alt="Git, GitHub, GitHub Actions, Node.js, npm, Maven, Gradle, PowerShell, and Bash" />
 </p>
 
-## ⚡ GitHub Stats
+## ⚡ Contribution Stack
 
 <p>
-  <img src="./stats.svg" width="100%" alt="GitHub contribution snapshot and recent contribution stack for aoto-tech" />
+  <img src="./stats.svg" width="440" alt="Recent contribution stack for aoto-tech" />
 </p>
 
 <sub><a href="https://github.com/search?q=author%3Aaoto-tech+is%3Apr&type=pullrequests">View all pull requests →</a></sub>
