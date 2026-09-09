@@ -1,0 +1,52 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="900" height="230" viewBox="0 0 900 230" role="img" aria-labelledby="title desc">
+  <title id="title">Aoto-Tech GitHub contribution snapshot</title>
+  <desc id="desc">As of September 9, 2026: 35 pull requests, 23 merged, across 13 repositories, including 3 upstream merges.</desc>
+  <defs>
+    <linearGradient id="left" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#6D5DFB"/>
+      <stop offset="0.58" stop-color="#E45AAE"/>
+      <stop offset="1" stop-color="#FFB86B"/>
+    </linearGradient>
+    <linearGradient id="right" x1="0" y1="1" x2="1" y2="0">
+      <stop offset="0" stop-color="#5B54D6"/>
+      <stop offset="0.55" stop-color="#D65FC0"/>
+      <stop offset="1" stop-color="#FFB566"/>
+    </linearGradient>
+  </defs>
+
+  <rect x="1" y="1" width="434" height="228" rx="10" fill="url(#left)" stroke="#E5D9FF" stroke-opacity="0.8"/>
+  <rect x="465" y="1" width="434" height="228" rx="10" fill="url(#right)" stroke="#E5D9FF" stroke-opacity="0.8"/>
+
+  <g fill="#FFFFFF" font-family="-apple-system, BlinkMacSystemFont, Segoe UI, sans-serif">
+    <text x="24" y="40" font-size="22" font-weight="700">Contribution Snapshot</text>
+    <text x="24" y="64" font-size="12" opacity="0.82">Public activity · 2026-09-09</text>
+
+    <text x="24" y="103" font-size="14" font-weight="600">Pull requests</text>
+    <text x="408" y="103" font-size="18" font-weight="700" text-anchor="end">35</text>
+    <text x="24" y="138" font-size="14" font-weight="600">Merged</text>
+    <text x="408" y="138" font-size="18" font-weight="700" text-anchor="end">23</text>
+    <text x="24" y="173" font-size="14" font-weight="600">Repositories</text>
+    <text x="408" y="173" font-size="18" font-weight="700" text-anchor="end">13</text>
+    <text x="24" y="208" font-size="14" font-weight="600">Upstream merges</text>
+    <text x="408" y="208" font-size="18" font-weight="700" text-anchor="end">3</text>
+
+    <text x="488" y="40" font-size="22" font-weight="700">Recent Contribution Stack</text>
+    <text x="488" y="64" font-size="12" opacity="0.82">Languages and representative projects</text>
+
+    <circle cx="494" cy="98" r="5" fill="#F89820"/>
+    <text x="510" y="103" font-size="14" font-weight="700">Java</text>
+    <text x="592" y="103" font-size="12" opacity="0.88">Spotless · SpotBugs · Checkstyle</text>
+
+    <circle cx="494" cy="133" r="5" fill="#DEA584"/>
+    <text x="510" y="138" font-size="14" font-weight="700">Rust</text>
+    <text x="592" y="138" font-size="12" opacity="0.88">DataFusion · Oxc</text>
+
+    <circle cx="494" cy="168" r="5" fill="#66D9EF"/>
+    <text x="510" y="173" font-size="14" font-weight="700">TypeScript</text>
+    <text x="592" y="173" font-size="12" opacity="0.88">CellFence · Medusa</text>
+
+    <circle cx="494" cy="203" r="5" fill="#FFD43B"/>
+    <text x="510" y="208" font-size="14" font-weight="700">Python</text>
+    <text x="592" y="208" font-size="12" opacity="0.88">dbt-plan · RFC_HTTP</text>
+  </g>
+</svg>
