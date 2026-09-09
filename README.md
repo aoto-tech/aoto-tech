@@ -8,7 +8,7 @@ Developer tooling, static analysis, build systems, and CI correctness.
 - I turn unexpected behavior into small reproductions and regression tests.
 - I'm building [CellFence](https://github.com/aoto-tech/CellFence), deterministic architecture guardrails for codebases changed by humans and coding agents.
 
-## 🤝 最近のコントリビュート履歴
+## 🤝 Recent Contributions
 
 - [**Spotless #3042**](https://github.com/diffplug/spotless/pull/3042) — Prevented valid TOML entries and quoted content from being changed or dropped. `merged`
 - [**SpotBugs #4296**](https://github.com/spotbugs/spotbugs/pull/4296) — Preserved useful logical locations in SARIF when source paths are unknown. `merged · 4.10.5`
