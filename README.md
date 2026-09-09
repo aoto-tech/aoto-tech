@@ -1,32 +1,38 @@
-# YukiAoto
+<p align="center">
+  <img src="./hero.svg" width="100%" alt="Aoto-Tech — quiet failures, made reproducible." />
+</p>
 
-I work on correctness in developer tools and CI. I like turning quiet edge cases—data loss, wrong results, and skipped analysis—into small reproducers and regression-tested fixes.
+Developer tooling, static analysis, and CI correctness.<br />
+I work on bugs that leave the build green: wrong results, dropped data, and skipped analysis.
 
-My default loop: reproduce → isolate → patch narrowly → add a regression test → state the verification boundary.
+## Selected upstream fixes
 
-## Recent upstream work
+### 01 / [Spotless — version catalog formatting](https://github.com/diffplug/spotless/pull/3042)
 
-Merged in September 2026:
+Prevented valid TOML entries and quoted content from being changed or dropped. <sub>MERGED</sub>
 
-| Project | Contribution |
-| --- | --- |
-| [Spotless #3042](https://github.com/diffplug/spotless/pull/3042) | Fixed Gradle version-catalog formatting that could drop TOML entries or alter quoted string contents. |
-| [SpotBugs #4296](https://github.com/spotbugs/spotbugs/pull/4296) | Made SARIF generation tolerate unknown source paths while preserving useful logical locations. |
-| [dbt-plan #181](https://github.com/PresentJay/dbt-plan/pull/181) | Helped make generated CI run on every pull request after review exposed unsafe path inference that could skip dbt changes. |
+### 02 / [SpotBugs — SARIF source paths](https://github.com/spotbugs/spotbugs/pull/4296)
 
-[See all public pull requests →](https://github.com/search?q=author%3Aaoto-tech+is%3Apr&type=pullrequests)
+Made SARIF output survive unknown source paths without losing logical locations or printing exception traces. <sub>MERGED · 4.10.5</sub>
 
-## Currently building
+### 03 / [dbt-plan — pull-request CI](https://github.com/PresentJay/dbt-plan/pull/181)
 
-[**CellFence**](https://github.com/aoto-tech/CellFence) is a deterministic architecture guardrail for repositories edited by coding agents and humans. It catches boundary drift that tests and type checks can miss, including private cross-cell imports, undeclared dependencies, public API drift, and undeclared resource access.
+Closed a path-inference gap that could let dbt changes skip generated CI. <sub>MERGED</sub>
 
-Recent engineering work includes:
+## Building
 
-- Closing [14 analysis and governance correctness gaps](https://github.com/aoto-tech/CellFence/pull/65), backed by 1,196 passing tests and focused mutation checks.
-- Building a [fail-closed scoped mutation runner](https://github.com/aoto-tech/CellFence/pull/7); its recorded full scoped sweep took about 73 minutes versus 689 minutes for the previous full audit.
+### [CellFence](https://github.com/aoto-tech/CellFence)
 
-CellFence is currently pre-release software (`v0.x`).
+Deterministic architecture guardrails for codebases changed by humans and coding agents. CellFence checks dependency boundaries, public API drift, undeclared resource access, and manifest changes that would self-approve architectural growth.
 
-## Working across
+```text
+code change ──▶ tests pass ──▶ types pass ──▶ boundary drift
+                                                 │
+                                          CellFence fails
+```
 
-Static analysis · build and CI tooling · parser and serializer edge cases · Java · Rust · TypeScript/JavaScript · Python
+Recent work: [14 analysis and governance fixes](https://github.com/aoto-tech/CellFence/pull/65) · [fail-closed scoped mutation testing](https://github.com/aoto-tech/CellFence/pull/7)
+
+---
+
+<sub>Mostly Java, Rust, TypeScript, and Python · <a href="https://github.com/search?q=author%3Aaoto-tech+is%3Apr&type=pullrequests">all pull requests ↗</a></sub>
